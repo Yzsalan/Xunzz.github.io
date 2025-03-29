@@ -1,0 +1,36 @@
+<!-- 基本的连接css -->
+<link href="styles/style.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+
+<!DOCTYPE html><!-- 必须写在第一行，无闭合标签
+-- 强制浏览器进入标准模式（而非怪异模式）
+-- 声明HTML5文档类型，避免旧浏览器错误解析-->
+<html>
+  <head>
+    <meta charset="utf-8"><!-- 2.<meta> 元数据-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 1st page</title> <!-- 1.<title> 的SEO权重-->
+  </head>
+  <body>
+    <h1>我是谁？</h1>
+    <img src="images/mumu.jpeg" alt="木木枭">
+
+    <p>椭圆形的鸟宝可梦，面部呈白色，形状类似于一个∞。除了尾部羽毛为绿色，全身披著褐色的羽毛。它的喙为半白半橙色，胸口有两片绿叶呈领结状，还有一对短短的橙色鸟爪。</p>
+
+    <ul> <!-- changed to list in the tutorial -->
+      <li>无声无息，发动攻击！    <img src="images/atk1.webp" alt="木木枭"></li>
+      <li>转转转地转动头部！    <img src="images/atk2.webp" alt="木木枭"></li>
+    </ul>
+
+
+    <p>Read the <a href="https://wiki.52poke.com/wiki/%E6%9C%A8%E6%9C%A8%E6%9E%AD"> Pokemon wiki</a> 
+      to learn even more</p>
+      <!-- 在 <script> 元素前添加下列代码： -->
+      <button>Change user</button>
+
+      <!-- 将 <script> 元素放在 HTML 文件的底部附近的原因是浏览器会按照代码在文件中的顺序进行读取。
+        如果 JavaScript 先加载，并期望操纵还未加载的 HTML，可能会出现问题。将 JavaScript 放在 HTML 页面的底部附近是一种解决方案。想要了解更多的替代方案，参见脚本加载策略。 -->
+      <script src="scripts/main.js"></script>
+    </body>
+</html>
